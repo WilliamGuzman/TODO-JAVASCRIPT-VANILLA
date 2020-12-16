@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.box {
+  width: 700px;
+  background-color: #ffffff;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1),
+    0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1),
+    0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12),
+    0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #007bff;
+  font-size: 1.2rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.complited {
+  background-color: #17c671;
+}
+
+.pending {
+  background-color: #c4183c;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+/***** FORM  *****/
+
+.container_form {
+  border-radius: 10px;
+}
+
+.header_form {
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #e1e5eb;
+}
+
+.header_form > h2 {
+  padding: 20px 0;
+  color: #3d5170;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.input_task {
+  width: 450px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #e1e5eb;
+  transition: 0.5s;
+}
+
+.input_task:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+.validation{
+  position: absolute;
+  top:60px;
+  left: 35px;
+  color: red;
+  opacity: 0;
+}
+
+.validation_show{
+  opacity: 1;
+}
+
+.validation_input{
+  border: 1px solid red;
+}
+
+/*****  LIST   *****/
+
+.container_list {
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+
+.list_element {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info > p {
+  margin-left: 20px;
+}
+
+.check_status {
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    color: #000000;
+    border: 1px solid #bdc1c6;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.status {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 8px;
+  border-radius: 10px;
+}
+
+.btn_delete{
+  width: 40px;
+  height: 25px;
+  margin-left: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  color: #c4183c;
+  font-weight: bold;
+  border: 1px solid #c4183c;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.btn_delete:hover{
+  background-color: #c4183c;
+  color: #ffffff;
+}
